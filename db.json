@@ -13,10 +13,10 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "Document Appointment",
-      "day": "Feb",
-      "reminder": true
+      "text": "TEST",
+      "day": "LOVW",
+      "reminder": true,
+      "id": 3
     }
   ]
 }
