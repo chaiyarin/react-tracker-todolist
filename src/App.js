@@ -76,8 +76,12 @@ function App() {
     <Router>
       <div className="container">
         <Header title="Chaiyarin" onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask}></Header>
-        {showAddTask ? <AddTask onAdd={addTask}></AddTask> : ''}
+        <Route path='/' exact render={(props) => (
+          <>
+                  {showAddTask ? <AddTask onAdd={addTask}></AddTask> : ''}
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'ไม่มีข้อมูล'}
+          </>
+        )}></Route>
         <Route path='/about' component={About} />
         <Footer></Footer>
       </div>

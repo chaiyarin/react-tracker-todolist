@@ -17,6 +17,12 @@
       "day": "LOVW",
       "reminder": true,
       "id": 3
+    },
+    {
+      "text": "SEX",
+      "day": "NUDE",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
